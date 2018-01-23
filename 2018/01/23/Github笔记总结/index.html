@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="怪打死吧v了">
 <meta property="og:description" content="一、关联git和github  申请github账号，登录 登录后找头像右边下拉按钮找settings 点击SSH and GPG keys 点击new SSH key 输入title 项目名称 回到git bush 输入Ssh-keygen-t rsa –C ‘851614428@qq.com’ 回到c盘找到生成的公钥.ssh/id_rsa.pub复制公钥到github的key里 Add SSH">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-23T12:21:29.386Z">
+<meta property="og:updated_time" content="2018-01-23T12:55:14.870Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github笔记总结">
 <meta name="twitter:description" content="一、关联git和github  申请github账号，登录 登录后找头像右边下拉按钮找settings 点击SSH and GPG keys 点击new SSH key 输入title 项目名称 回到git bush 输入Ssh-keygen-t rsa –C ‘851614428@qq.com’ 回到c盘找到生成的公钥.ssh/id_rsa.pub复制公钥到github的key里 Add SSH">
@@ -113,12 +113,12 @@
 <p><strong>删除</strong><br>    1、删除暂存区的文件：git rm 文件名本地的文件手动删除了，暂存区里是还有的<br>    2、删除本地文件和暂存区文件：git rm -f 文件名<br>    3、只删除暂存区，不删除本地文件：git rm –cached 文件名</p>
 <p><strong>恢复</strong><br>    1、git checkout 编码 文件名        恢复单个文件<br>    注意：编码通过git log去找，只用输几个字符就可以，只要不与其它的编码重复<br>    2、git reset –hard 编码            恢复整个版本的文件<br>    3、git reflog                        查找历史版本记录，方便回滚</p>
 <p><strong>发布到github上</strong><br>    git remote                查看远程仓库的名称<br>    git remote -v            查看远程仓库的地址<br>    git push origin master    把版本库中的文件提交到远程仓库<br><strong>设置多人开发权限</strong><br>    1、一个项目可以设置多个开发人员一起开发<br>    2、在项目中点击右上角加号，点击New collaborator，在弹出的页面里找到输入框输入用户名点击后面的add按钮<br>    3、其它的开发都必需先clone一下项目，下载到本地<br><strong>多人开发出现冲突（如果多人同时在操作一个代码，那提交的时候会有冲突）</strong><br>    1、git fetch                            把线上的代码先下载下来<br>    2、git diff master origin/master        查看冲突，会很清晰的打出来哪些代码不一样<br>    3、git merge origin/master            将不同的代码显示到页面中，人为的判断用谁的代码<br>    4、解决完后，再push上去</p>
-<p><strong>分支</strong><br>    git branch                    查找分支<br>    git branch 新分支名            新建分支<br>    git checkout 分支名            切换分支<br>    git checkout -b 新分支名        快速新建并切换<br>    git merge 分支名                合并分支<br>    git branch -d 分支名            删除分支</p>
+<p><strong>分支</strong><br>    git branch（查找分支）<br>    git branch 新分支名（新建分支）<br>    git checkout 分支名（切换分支）<br>    git checkout -b 新分支名（快速新建并切换）<br>    git merge 分支名（合并分支）<br>    git branch -d 分支名（删除分支）</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/23/Github笔记总结/" data-id="cjcrmigc000026gn13fwh477o" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/01/23/Github笔记总结/" data-id="cjcrn8jhv0002z8n1zq10piov" class="article-share-link">Share</a>
       
       
     </footer>
