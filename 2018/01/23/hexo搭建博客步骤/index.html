@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>hexo搭建博客步骤 | 怪打死吧v了</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="安装Git下载并安装git，如果你想了解点Git的基础命令，我推荐以下博文：Git常用的基础命令，史上最全github使用方法：github入门到精通,当然即使你不懂Git的命令，跟着本博文走，也完全没问题。 安装Node.js下载并安装Node.js，此处我建议安装完毕后重启电脑，因为我当初安装完没重启，结果后面使用命令安装hexo的时候，提示无效的命令，因此推荐重启。当然，你也可以选择等到后面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo搭建博客步骤">
+<meta property="og:url" content="http://yoursite.com/2018/01/23/hexo搭建博客步骤/index.html">
+<meta property="og:site_name" content="怪打死吧v了">
+<meta property="og:description" content="安装Git下载并安装git，如果你想了解点Git的基础命令，我推荐以下博文：Git常用的基础命令，史上最全github使用方法：github入门到精通,当然即使你不懂Git的命令，跟着本博文走，也完全没问题。 安装Node.js下载并安装Node.js，此处我建议安装完毕后重启电脑，因为我当初安装完没重启，结果后面使用命令安装hexo的时候，提示无效的命令，因此推荐重启。当然，你也可以选择等到后面">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-01-23T13:25:49.279Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo搭建博客步骤">
+<meta name="twitter:description" content="安装Git下载并安装git，如果你想了解点Git的基础命令，我推荐以下博文：Git常用的基础命令，史上最全github使用方法：github入门到精通,当然即使你不懂Git的命令，跟着本博文走，也完全没问题。 安装Node.js下载并安装Node.js，此处我建议安装完毕后重启电脑，因为我当初安装完没重启，结果后面使用命令安装hexo的时候，提示无效的命令，因此推荐重启。当然，你也可以选择等到后面">
+  
+    <link rel="alternate" href="/atom.xml" title="怪打死吧v了" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">怪打死吧v了</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">惨死妖怪的背后究竟有何真相</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hexo搭建博客步骤" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/23/hexo搭建博客步骤/" class="article-date">
+  <time datetime="2018-01-23T13:06:55.000Z" itemprop="datePublished">2018-01-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hexo搭建博客步骤
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>安装Git</strong><br>下载并安装git，如果你想了解点Git的基础命令，我推荐以下博文：Git常用的基础命令，史上最全github使用方法：github入门到精通,当然即使你不懂Git的命令，跟着本博文走，也完全没问题。</p>
+<p><strong>安装Node.js</strong><br>下载并安装Node.js，此处我建议安装完毕后重启电脑，因为我当初安装完没重启，结果后面使用命令安装hexo的时候，提示无效的命令，因此推荐重启。当然，你也可以选择等到后面遇到问题，再选择重启。</p>
+<p><strong>安装hexo</strong><br>安装前先介绍几个hexo常用的命令,#后面为注释。<br>$ hexo g #完整命令为hexo generate，用于生成静态文件<br>$ hexo s #完整命令为hexo server，用于启动服务器，主要用来本地预览<br>$ hexo d #完整命令为hexo deploy，用于将本地文件发布到github上<br>$ hexo n #完整命令为hexo new，用于新建一篇文章</p>
+<p>鼠标右键任意地方，选择Git Bash，使用以下命令安装hexo：<br>  npm install hexo-cli -g<br>  如果之后在使用的过程中，遇到 EEEOE Deloyer not found : github 错误<br>  则运行以下命令，或者你直接先运行这个命令更好<br>  npm install hexo-deployer-git –save<br>  hexo g<br>  hexo d</p>
+<p>接下来创建放置博客文件的文件夹：hexo文件夹。在自己想要的位置创建文件夹，如我hexo文件夹的位置为D:\hexo，名字和地方可以自由选择，当然最好不要放在中文路径下，至于原因，我想很多人懂得。之后进入文件夹，即D:\hexo内，点击鼠标右键，选择Git Bash，执行以下命令，Hexo会自动在该文件夹下下载搭建网站所需的所有文件。<br>hexo init<br>安装依赖包<br>npm install<br>让我们看看刚刚下载的hexo文件带来了什么，在E:\hexo内执行以下命令<br>hexo g<br>hexo s<br>然后用浏览器访问<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>，此时，你应该看到了一个漂亮的博客了，当然这个博客只是在本地的，别人是看不到的，hexo3.0使用的默认主题是landscape。轻轻松松就看到了一点成果，是不是很激动，这就是hexo的强大之处，这个本地预览的功能，我真是爱不释手。</p>
+<p><strong>注册github账号</strong><br>已经有Github帐号跳过此步，首先进入Github进行注册，用户名、邮箱和密码之后都需要用到，自己记好。</p>
+<p><strong>创建repository</strong><br>repository相当于一个仓库，用来放置你的代码文件。首先，登陆进入Github，并进入个人页面，选择Repositories，然后新建一个repository，创建时，只需要填写Repository name即可，当然这个名字的格式必须为youname.github.io，例如我的为qinjing-github.github.io</p>
+<p><strong>部署本地文件到github</strong><br>既然Repository已经创建了，当然是先把博客放到Github上去看看效果。编辑D：\hexo下的_config.yml文件，建议使用Notepad++。<br>在_config.yml最下方，添加如下配置(命令中的第一个huangjunhui为Github的用户名,第二个qinjing-github为之前New的Repository的名字,记得改成自己的。另外记得一点，hexo的配置文件中任何’:’后面都是带一个空格的),如果配置以下命令出现ERROR Deployer not found : github，则参考上文的解决方法。<br>deploy:<br>  type: git<br>  repository: <a href="http://github.com/qinjing-github/qinjing-github.github.io.git" target="_blank" rel="noopener">http://github.com/qinjing-github/qinjing-github.github.io.git</a><br>  branch: master<br>配置好_config.yml并保存后，执行以下命令部署到Github上。如果你是第一次使用Github或者是已经使用过，但没有配置过SSH，则可能需要配置一下，具体方法史上最全github使用方法：github入门到精通里面有介绍到。<br>hexo g<br>hexo d<br>执行上面的第二个命令，可能会要你输入用户名和密码，皆为注册Github时的数据，输入密码是不显示任何东西的，输入完毕回车即可。<br>此时，我们的博客已经搭建起来，并发布到Github上了，在浏览器访问<a href="https://qinjing-github.github.io" target="_blank" rel="noopener">https://qinjing-github.github.io</a>就能看到自己的博客了。第一次访问刚地址，可能访问不了，您可以在几分钟后进行访问，一般不超过10分钟。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/23/hexo搭建博客步骤/" data-id="cjcroc1o50002ksn15xvza0m3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/23/Github笔记总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Github笔记总结</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客，文章/">博客，文章</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/博客，文章/" style="font-size: 10px;">博客，文章</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/01/23/hexo搭建博客步骤/">hexo搭建博客步骤</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/23/Github笔记总结/">Github笔记总结</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/23/时间都去哪了/">时间都去哪了</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/22/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 怪打死吧v了<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>
