@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Github笔记总结 | 怪打死吧v了</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一、关联git和github  申请github账号，登录 登录后找头像右边下拉按钮找settings 点击SSH and GPG keys 点击new SSH key 输入title 项目名称 回到git bush 输入Ssh-keygen-t rsa –C ‘851614428@qq.com’ 回到c盘找到生成的公钥.ssh/id_rsa.pub复制公钥到github的key里 Add SSH">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github笔记总结">
+<meta property="og:url" content="http://yoursite.com/2018/01/23/Github笔记总结/index.html">
+<meta property="og:site_name" content="怪打死吧v了">
+<meta property="og:description" content="一、关联git和github  申请github账号，登录 登录后找头像右边下拉按钮找settings 点击SSH and GPG keys 点击new SSH key 输入title 项目名称 回到git bush 输入Ssh-keygen-t rsa –C ‘851614428@qq.com’ 回到c盘找到生成的公钥.ssh/id_rsa.pub复制公钥到github的key里 Add SSH">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-01-23T12:56:29.527Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Github笔记总结">
+<meta name="twitter:description" content="一、关联git和github  申请github账号，登录 登录后找头像右边下拉按钮找settings 点击SSH and GPG keys 点击new SSH key 输入title 项目名称 回到git bush 输入Ssh-keygen-t rsa –C ‘851614428@qq.com’ 回到c盘找到生成的公钥.ssh/id_rsa.pub复制公钥到github的key里 Add SSH">
+  
+    <link rel="alternate" href="/atom.xml" title="怪打死吧v了" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">怪打死吧v了</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">惨死妖怪的背后究竟有何真相</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Github笔记总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/23/Github笔记总结/" class="article-date">
+  <time datetime="2018-01-23T12:16:33.000Z" itemprop="datePublished">2018-01-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Github笔记总结
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>一、关联git和github</strong></p>
+<ol>
+<li>申请github账号，登录</li>
+<li>登录后找头像右边下拉按钮找settings</li>
+<li>点击SSH and GPG keys 点击new SSH key</li>
+<li>输入title 项目名称 回到git bush 输入<br>Ssh-keygen-t rsa –C ‘851614428@qq.com’</li>
+<li>回到c盘找到生成的公钥.ssh/id_rsa.pub复制公钥到github的key里</li>
+<li>Add SSH key</li>
+<li>测试有没有绑定成功 ssh -T git@github.com</li>
+</ol>
+<p><strong>二、设置用户信息</strong></p>
+<ol>
+<li>获取用户信息<br>git config –list 如果获取的用户信息有用户名以及邮箱，呢我们就不用重新设置了</li>
+<li>设置用户名以及邮箱<br>git config –global user.name ‘用户名’<br>git config –global user.email ‘邮箱’<br>完成设置后重新获取，此时用户名和邮箱就存在了</li>
+</ol>
+<p><strong>三、上传和下载项目<br>上传项目</strong><br>    在右上角找+下的new repository<br>    在Repository name输入框里输入项目名称public/private<br>    Initialize this repository with a README 这个选项必须勾选<br>    点击create repository增加项目 然后会生成项目网址</p>
+<p><strong>下载项目</strong><br>    生成项目完了回到本地去新建文件夹，然后回到git版本控制器上找新建的目录路径<br>    例如：在D新建文件夹名称为Tab<br>    找路径    cd<br>    cd D:  新建文件夹的路径<br>    cd ls   查看当前D盘下面所有的文件情况这一步可以查看可以不查看<br>    cd github/ 找到当前新建在D盘下的github文件夹<br>    此时就可以下载了 下载命令 需要复制我们Clone or download下的地址<br>    在git bush内输入git clone 复制的地址，然后回车</p>
+<p><strong>新建页面</strong><br>    进入某个文件夹跟本地文件系统一样使用cd命令，cd 文件名，进入该文件，地址里有一个master，表示已经进入到项目里了<br>    新建一个html文件<br>    可以在命令提示框里查看一下现在项目的状态git status，显示的红色的内容就是新添加的文件</p>
+<p><strong>把本地文件传到github上</strong><br>  1.添加到暂存区（过渡层，避免误操作，保护工作区和版本区）<br>        git add 文件名                将单个文件放到暂存区<br>        git add .                         将多个文件放到暂存区<br>  2.添加到版本区<br>        git commit –m ‘注释’        将文件放到版本区<br>        git commit –a –m ‘注释’    从本地直接到版本区，跳过了暂存区<br>  3.添加到github上<br>        git push origin master        这个步骤可能会提示要输入密码，输入注册时候的用户名与密码就可以提交完成后在网页里刷新就能看到提交的文件，文件在本地修改的时候，可以随时git status，查看现在的状态</p>
+<p><strong>查看文件的差异</strong><br>    查看本地与暂存区的差异：git diff<br>    查看暂存区与版本区差异：git diff –cached<br>    查看本地与版本区的差异：git diff master<br><strong>撤销</strong><br>    从暂存区撤消到本地：git reset HEAD 文件名<br>    把版本区的文件还原到本地：git checkout – 文件名<br>    如果有多个文件同时修改了，还需要一起提交。但是已经提交到版本区的时候忘记了，只提交了一个。解决方法：<br>             1、把未提交的的文件先提交到暂存区<br>             2、git commit -m ‘注释’ –amend</p>
+<p><strong>删除</strong><br>    1、删除暂存区的文件：git rm 文件名本地的文件手动删除了，暂存区里是还有的<br>    2、删除本地文件和暂存区文件：git rm -f 文件名<br>    3、只删除暂存区，不删除本地文件：git rm –cached 文件名</p>
+<p><strong>恢复</strong><br>    1、git checkout 编码 文件名        恢复单个文件<br>    注意：编码通过git log去找，只用输几个字符就可以，只要不与其它的编码重复<br>    2、git reset –hard 编码            恢复整个版本的文件<br>    3、git reflog                        查找历史版本记录，方便回滚</p>
+<p><strong>发布到github上</strong><br>    git remote                查看远程仓库的名称<br>    git remote -v            查看远程仓库的地址<br>    git push origin master    把版本库中的文件提交到远程仓库<br><strong>设置多人开发权限</strong><br>    1、一个项目可以设置多个开发人员一起开发<br>    2、在项目中点击右上角加号，点击New collaborator，在弹出的页面里找到输入框输入用户名点击后面的add按钮<br>    3、其它的开发都必需先clone一下项目，下载到本地<br><strong>多人开发出现冲突（如果多人同时在操作一个代码，那提交的时候会有冲突）</strong><br>    1、git fetch                            把线上的代码先下载下来<br>    2、git diff master origin/master        查看冲突，会很清晰的打出来哪些代码不一样<br>    3、git merge origin/master            将不同的代码显示到页面中，人为的判断用谁的代码<br>    4、解决完后，再push上去</p>
+<p><strong>分支</strong><br>    git branch（查找分支）<br>    git branch 新分支名（新建分支）<br>    git checkout 分支名（切换分支）<br>    git checkout -b 新分支名（快速新建并切换）<br>    git merge 分支名（合并分支）<br>    git branch -d 分支名（删除分支）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/23/Github笔记总结/" data-id="cjd01wyev0000non194yjygmm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/01/23/hexo搭建博客步骤/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          hexo搭建博客步骤
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/01/23/时间都去哪了/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">时间都去哪了</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客，文章/">博客，文章</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/博客，文章/" style="font-size: 10px;">博客，文章</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/01/23/hexo搭建博客步骤/">hexo搭建博客步骤</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/23/Github笔记总结/">Github笔记总结</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/23/时间都去哪了/">时间都去哪了</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/22/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 怪打死吧v了<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>

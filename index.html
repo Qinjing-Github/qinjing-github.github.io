@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>怪打死吧v了</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="怪打死吧v了">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="怪打死吧v了">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="怪打死吧v了">
+  
+    <link rel="alternate" href="/atom.xml" title="怪打死吧v了" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">怪打死吧v了</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">惨死妖怪的背后究竟有何真相</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-hexo搭建博客步骤" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/23/hexo搭建博客步骤/" class="article-date">
+  <time datetime="2018-01-23T13:06:55.000Z" itemprop="datePublished">2018-01-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/23/hexo搭建博客步骤/">hexo搭建博客步骤</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>安装Git</strong><br>下载并安装git，如果你想了解点Git的基础命令，我推荐以下博文：Git常用的基础命令，史上最全github使用方法：github入门到精通,当然即使你不懂Git的命令，跟着本博文走，也完全没问题。</p>
+<p><strong>安装Node.js</strong><br>下载并安装Node.js，此处我建议安装完毕后重启电脑，因为我当初安装完没重启，结果后面使用命令安装hexo的时候，提示无效的命令，因此推荐重启。当然，你也可以选择等到后面遇到问题，再选择重启。</p>
+<p><strong>安装hexo</strong><br>安装前先介绍几个hexo常用的命令,#后面为注释。<br>$ hexo g #完整命令为hexo generate，用于生成静态文件<br>$ hexo s #完整命令为hexo server，用于启动服务器，主要用来本地预览<br>$ hexo d #完整命令为hexo deploy，用于将本地文件发布到github上<br>$ hexo n #完整命令为hexo new，用于新建一篇文章</p>
+<p>鼠标右键任意地方，选择Git Bash，使用以下命令安装hexo：<br>  npm install hexo-cli -g<br>  如果之后在使用的过程中，遇到 EEEOE Deloyer not found : github 错误<br>  则运行以下命令，或者你直接先运行这个命令更好<br>  npm install hexo-deployer-git –save<br>  hexo g<br>  hexo d</p>
+<p>接下来创建放置博客文件的文件夹：hexo文件夹。在自己想要的位置创建文件夹，如我hexo文件夹的位置为D:\hexo，名字和地方可以自由选择，当然最好不要放在中文路径下，至于原因，我想很多人懂得。之后进入文件夹，即D:\hexo内，点击鼠标右键，选择Git Bash，执行以下命令，Hexo会自动在该文件夹下下载搭建网站所需的所有文件。<br>hexo init<br>安装依赖包<br>npm install<br>让我们看看刚刚下载的hexo文件带来了什么，在E:\hexo内执行以下命令<br>hexo g<br>hexo s<br>然后用浏览器访问<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>，此时，你应该看到了一个漂亮的博客了，当然这个博客只是在本地的，别人是看不到的，hexo3.0使用的默认主题是landscape。轻轻松松就看到了一点成果，是不是很激动，这就是hexo的强大之处，这个本地预览的功能，我真是爱不释手。</p>
+<p><strong>注册github账号</strong><br>已经有Github帐号跳过此步，首先进入Github进行注册，用户名、邮箱和密码之后都需要用到，自己记好。</p>
+<p><strong>创建repository</strong><br>repository相当于一个仓库，用来放置你的代码文件。首先，登陆进入Github，并进入个人页面，选择Repositories，然后新建一个repository，创建时，只需要填写Repository name即可，当然这个名字的格式必须为youname.github.io，例如我的为qinjing-github.github.io</p>
+<p><strong>部署本地文件到github</strong><br>既然Repository已经创建了，当然是先把博客放到Github上去看看效果。编辑D：\hexo下的_config.yml文件，建议使用Notepad++。<br>在_config.yml最下方，添加如下配置(命令中的第一个huangjunhui为Github的用户名,第二个qinjing-github为之前New的Repository的名字,记得改成自己的。另外记得一点，hexo的配置文件中任何’:’后面都是带一个空格的),如果配置以下命令出现ERROR Deployer not found : github，则参考上文的解决方法。<br>deploy:<br>  type: git<br>  repository: <a href="http://github.com/qinjing-github/qinjing-github.github.io.git" target="_blank" rel="noopener">http://github.com/qinjing-github/qinjing-github.github.io.git</a><br>  branch: master<br>配置好_config.yml并保存后，执行以下命令部署到Github上。如果你是第一次使用Github或者是已经使用过，但没有配置过SSH，则可能需要配置一下，具体方法史上最全github使用方法：github入门到精通里面有介绍到。<br>hexo g<br>hexo d<br>执行上面的第二个命令，可能会要你输入用户名和密码，皆为注册Github时的数据，输入密码是不显示任何东西的，输入完毕回车即可。<br>此时，我们的博客已经搭建起来，并发布到Github上了，在浏览器访问<a href="https://qinjing-github.github.io" target="_blank" rel="noopener">https://qinjing-github.github.io</a>就能看到自己的博客了。第一次访问刚地址，可能访问不了，您可以在几分钟后进行访问，一般不超过10分钟。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/23/hexo搭建博客步骤/" data-id="cjd01wyfq0003non172y4752x" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Github笔记总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/23/Github笔记总结/" class="article-date">
+  <time datetime="2018-01-23T12:16:33.000Z" itemprop="datePublished">2018-01-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/23/Github笔记总结/">Github笔记总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>一、关联git和github</strong></p>
+<ol>
+<li>申请github账号，登录</li>
+<li>登录后找头像右边下拉按钮找settings</li>
+<li>点击SSH and GPG keys 点击new SSH key</li>
+<li>输入title 项目名称 回到git bush 输入<br>Ssh-keygen-t rsa –C ‘851614428@qq.com’</li>
+<li>回到c盘找到生成的公钥.ssh/id_rsa.pub复制公钥到github的key里</li>
+<li>Add SSH key</li>
+<li>测试有没有绑定成功 ssh -T git@github.com</li>
+</ol>
+<p><strong>二、设置用户信息</strong></p>
+<ol>
+<li>获取用户信息<br>git config –list 如果获取的用户信息有用户名以及邮箱，呢我们就不用重新设置了</li>
+<li>设置用户名以及邮箱<br>git config –global user.name ‘用户名’<br>git config –global user.email ‘邮箱’<br>完成设置后重新获取，此时用户名和邮箱就存在了</li>
+</ol>
+<p><strong>三、上传和下载项目<br>上传项目</strong><br>    在右上角找+下的new repository<br>    在Repository name输入框里输入项目名称public/private<br>    Initialize this repository with a README 这个选项必须勾选<br>    点击create repository增加项目 然后会生成项目网址</p>
+<p><strong>下载项目</strong><br>    生成项目完了回到本地去新建文件夹，然后回到git版本控制器上找新建的目录路径<br>    例如：在D新建文件夹名称为Tab<br>    找路径    cd<br>    cd D:  新建文件夹的路径<br>    cd ls   查看当前D盘下面所有的文件情况这一步可以查看可以不查看<br>    cd github/ 找到当前新建在D盘下的github文件夹<br>    此时就可以下载了 下载命令 需要复制我们Clone or download下的地址<br>    在git bush内输入git clone 复制的地址，然后回车</p>
+<p><strong>新建页面</strong><br>    进入某个文件夹跟本地文件系统一样使用cd命令，cd 文件名，进入该文件，地址里有一个master，表示已经进入到项目里了<br>    新建一个html文件<br>    可以在命令提示框里查看一下现在项目的状态git status，显示的红色的内容就是新添加的文件</p>
+<p><strong>把本地文件传到github上</strong><br>  1.添加到暂存区（过渡层，避免误操作，保护工作区和版本区）<br>        git add 文件名                将单个文件放到暂存区<br>        git add .                         将多个文件放到暂存区<br>  2.添加到版本区<br>        git commit –m ‘注释’        将文件放到版本区<br>        git commit –a –m ‘注释’    从本地直接到版本区，跳过了暂存区<br>  3.添加到github上<br>        git push origin master        这个步骤可能会提示要输入密码，输入注册时候的用户名与密码就可以提交完成后在网页里刷新就能看到提交的文件，文件在本地修改的时候，可以随时git status，查看现在的状态</p>
+<p><strong>查看文件的差异</strong><br>    查看本地与暂存区的差异：git diff<br>    查看暂存区与版本区差异：git diff –cached<br>    查看本地与版本区的差异：git diff master<br><strong>撤销</strong><br>    从暂存区撤消到本地：git reset HEAD 文件名<br>    把版本区的文件还原到本地：git checkout – 文件名<br>    如果有多个文件同时修改了，还需要一起提交。但是已经提交到版本区的时候忘记了，只提交了一个。解决方法：<br>             1、把未提交的的文件先提交到暂存区<br>             2、git commit -m ‘注释’ –amend</p>
+<p><strong>删除</strong><br>    1、删除暂存区的文件：git rm 文件名本地的文件手动删除了，暂存区里是还有的<br>    2、删除本地文件和暂存区文件：git rm -f 文件名<br>    3、只删除暂存区，不删除本地文件：git rm –cached 文件名</p>
+<p><strong>恢复</strong><br>    1、git checkout 编码 文件名        恢复单个文件<br>    注意：编码通过git log去找，只用输几个字符就可以，只要不与其它的编码重复<br>    2、git reset –hard 编码            恢复整个版本的文件<br>    3、git reflog                        查找历史版本记录，方便回滚</p>
+<p><strong>发布到github上</strong><br>    git remote                查看远程仓库的名称<br>    git remote -v            查看远程仓库的地址<br>    git push origin master    把版本库中的文件提交到远程仓库<br><strong>设置多人开发权限</strong><br>    1、一个项目可以设置多个开发人员一起开发<br>    2、在项目中点击右上角加号，点击New collaborator，在弹出的页面里找到输入框输入用户名点击后面的add按钮<br>    3、其它的开发都必需先clone一下项目，下载到本地<br><strong>多人开发出现冲突（如果多人同时在操作一个代码，那提交的时候会有冲突）</strong><br>    1、git fetch                            把线上的代码先下载下来<br>    2、git diff master origin/master        查看冲突，会很清晰的打出来哪些代码不一样<br>    3、git merge origin/master            将不同的代码显示到页面中，人为的判断用谁的代码<br>    4、解决完后，再push上去</p>
+<p><strong>分支</strong><br>    git branch（查找分支）<br>    git branch 新分支名（新建分支）<br>    git checkout 分支名（切换分支）<br>    git checkout -b 新分支名（快速新建并切换）<br>    git merge 分支名（合并分支）<br>    git branch -d 分支名（删除分支）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/23/Github笔记总结/" data-id="cjd01wyev0000non194yjygmm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-时间都去哪了" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/23/时间都去哪了/" class="article-date">
+  <time datetime="2018-01-23T00:28:14.000Z" itemprop="datePublished">2018-01-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/23/时间都去哪了/">时间都去哪了</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p>艾力</p>
+<p>   请问大家一个问题，昨天晚上你做什么了，还记得吗？肯定记得，没有问题。那我再随便问一个吧，一个月前的周六早上起床到晚上睡觉做了什么呢？估计完全想不起来了。那如果我说那天你昏迷了一天，什么都没有做，你能证明我说错了吗？其实不行，大部分人做不到，这就是为什么今年春晚的时候那么多人感慨那首歌《<a href="https://y.qq.com/portal/player.html" target="_blank" rel="noopener">时间都去哪里了</a>》。我当时听到这个歌呀，一点感慨都没有因为我知道任何东西你不去记录，它就会莫名其妙地消失。比如说如果你不记钱的话，一百块钱一破开立马就没有了，所以说大家会去记账。但是我们都知道，<strong>一寸光阴一寸金</strong>，时间要比金钱重要，你都记账了，为什么不去记录时间呢？</p>
+<p>   不过有人会反驳说时间太抽象了，不像金钱那么具体，写日记又太文艺，怎么破？因此两年前我总结整理了一套方法叫做三十四枚金币时间管理法，方法很简单，就是早上七点起床，晚上十二点睡觉，醒的时间一共是十七个小时，按半小时分类，把这个十七个小时分成三十四块，你就有了三十四枚金币。当然你会说为什么一定七点，八点起床行不行，可以，那就是三十二枚，九点，三十枚，每天起两小时，那就是四枚金币，有这样的人。每天晚上睡觉前用自己的表格记录一下这些时间是怎么花的，如果花的比较高效，比如说高效地工作了，学习了，或者痛痛快快地玩了，都把它标成绿色。但如果说花得毫无意义，拖延了，干了一些不疼不痒的事儿，比如说无限地刷微博、刷朋友圈、自己给自己点个赞，你就把它标成红色，这么一来你一天的时间干什么了，高效与否一目了然。当然这个表格还有一个非常神奇的功效，比如说我通过这个方法就从之前一百八十四斤的胖子到现在的一百四十斤，工资也涨了好几倍，而且写了四本书，凡是用这个方法的人呢，一百多位朋友他们也让自己的工资涨了不少。</p>
+<p>   当然你可能会说，为什么这个方法貌似这么神奇呢，其实它一点都不悬乎，就是三个字：<strong>自控力</strong>。一般人什么时候自控力最强呢？没错，玩游戏的时候，都憋的不行了，还在那儿玩，自控力太棒了。为什么，因为游戏能提供我们大量的成就感，而成就感其实来自于记录，你玩游戏是因为左上角在记分，所以你玩得很开心。但如果分也不记，什么都没有，就是一个小人跑呀跑，你肯定不想玩了，所以通过记录你获得了成就感，从而获得自控力，从而能实现你的目标。</p>
+<p>   当然，2013年一共有365天，52周零一天，8760小时，12410枚金币，那些金币去哪儿了，我都还记得，当然我知道现在大部分人会有两种反应，第一种反应是“我的天，这哥们真变态，我要离他远一点。”第二种反应是“我的天，这哥们真变态，我也尝试尝试。”</p>
+<p>   我希望你是后者，希望今天在座的你能学会一件事儿，就是<strong>记录时间，培养习惯，塑造性格，改变一生</strong>。</p>
+<p><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&amp;quality=100&amp;size=b4000_4000&amp;sec=1516675427&amp;di=d94908b1a1a4182e6d05f75f0329008b&amp;src=http://www.christiantimes.cn/assets/cache/widen_700/assets/media/post/201604/20753/www.christiantimes.cn-time-430625_960_720.jpg" alt="Baidu image"><br><!--more--></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/23/时间都去哪了/" data-id="cjd01wyfq0002non1viub3bez" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客，文章/">博客，文章</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/22/hello-world/" class="article-date">
+  <time datetime="2018-01-22T10:59:08.225Z" itemprop="datePublished">2018-01-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/22/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/22/hello-world/" data-id="cjd01wyfb0001non1jr8tj1zf" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客，文章/">博客，文章</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/博客，文章/" style="font-size: 10px;">博客，文章</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/01/23/hexo搭建博客步骤/">hexo搭建博客步骤</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/23/Github笔记总结/">Github笔记总结</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/23/时间都去哪了/">时间都去哪了</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/22/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 怪打死吧v了<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>
