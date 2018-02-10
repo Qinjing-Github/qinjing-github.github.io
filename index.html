@@ -66,6 +66,132 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-2017技术总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/09/2017技术总结/" class="article-date">
+  <time datetime="2018-02-09T07:25:27.000Z" itemprop="datePublished">2018-02-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/09/2017技术总结/">技术总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1、行内元素有哪些？块级元素有哪些？-空-void-元素有那些？"><a href="#1、行内元素有哪些？块级元素有哪些？-空-void-元素有那些？" class="headerlink" title="1、行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？"></a>1、行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h4><p>● CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，比如div默认display属性值为“block”，成为“块级”元素；span默认display属性值为“inline”，是“行内”元素。<br>● 行内元素有: a b span img input select strong（强调的语气）<br>● 块级元素有:div ul ol li dl dt dd h1 h2 h3 h4…p<br>● 知名的空元素：<code>&lt;br&gt; &lt;hr&gt; &lt;img&gt; &lt;input&gt; &lt;link&gt; &lt;meta&gt;</code><br>● 鲜为人知的是：<code>&lt;area&gt; &lt;base&gt; &lt;col&gt; &lt;command&gt; &lt;embed&gt; &lt;keygen&gt; &lt;param&gt; &lt;source&gt; &lt;track&gt; &lt;wbr&gt;</code></p>
+<h4 id="2、CSS的盒子模型"><a href="#2、CSS的盒子模型" class="headerlink" title="2、CSS的盒子模型"></a>2、CSS的盒子模型</h4><p>● 盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)<br>● 标准盒子模型<br>● IE盒子模型</p>
+<h4 id="3、浏览器内核的理解"><a href="#3、浏览器内核的理解" class="headerlink" title="3、浏览器内核的理解"></a>3、浏览器内核的理解</h4><p>● 浏览器内核分为两部分：渲染引擎和js引擎<br>● 渲染引擎：负责取得网页内容、整理讯息，以及计算网页的显示方式，然后输出至显示器或打印机。浏览器内核不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其他需要编辑、显示网络内容英语程序都需要审核。<br>● js引擎：解析和执行js来实现网页的动态效果。</p>
+<h4 id="4、什么是语义化的html"><a href="#4、什么是语义化的html" class="headerlink" title="4、什么是语义化的html"></a>4、什么是语义化的html</h4><p>● 直观的认识标签，让页面内容结构化，便于对浏览器、搜索引擎解析，爬虫依赖于标签来确定上下文和各个关键字的权重，方便其他设备解析（屏幕阅读器、盲人阅读器、移动设备）。在没有css样式的时候也可以以一种清晰的文档结构显示。</p>
+<h4 id="5、页面导入样式时-import和link有什么区别"><a href="#5、页面导入样式时-import和link有什么区别" class="headerlink" title="5、页面导入样式时@import和link有什么区别"></a>5、页面导入样式时@import和link有什么区别</h4><p>● link是XHTML标签，没有兼容问题，不仅能够加载CSS样式，还可以定义rel连接属性。link在页面加载的时候同时加载。@import在ie5以上版本不支持，而且只能加载CSS样式，页面加载完后开始加载。<br>● 页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;<br>● link方式的样式的权重高于@import的权重.</p>
+<h4 id="6、为什么要初始化CSS样式"><a href="#6、为什么要初始化CSS样式" class="headerlink" title="6、为什么要初始化CSS样式"></a>6、为什么要初始化CSS样式</h4><p>● 因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。<br>● 当然，初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。<br>● 最简单的初始化方法就是： * {padding: 0; margin: 0;}</p>
+<h4 id="7、变量的局部和全局"><a href="#7、变量的局部和全局" class="headerlink" title="7、变量的局部和全局"></a>7、变量的局部和全局</h4><p>● 局部：指的的是在特定的区域块内使用，全局是在整个区域可以使用<br>● 在函数的外部:加var和不加var 都是全局变量<br>● 在函数的内部，加var是局部变量，不加var 是全局变量<br>● 在函数外部定义一个全局变量和在函数内部定义一个相同的全局变量，在函数外部，使用的话，函数内部的全局变量会覆盖函数外部的全局变量。</p>
+<h4 id="8、逗号运算符"><a href="#8、逗号运算符" class="headerlink" title="8、逗号运算符"></a>8、逗号运算符</h4><blockquote>
+<p>var a=10;<br>var b=20;<br>var c=30;<br>d=(a+b,b+c);<br>alert(d);</p>
+</blockquote>
+<p>取值得时候取的是逗号最后的一个</p>
+<h4 id="9、隐式转换"><a href="#9、隐式转换" class="headerlink" title="9、隐式转换"></a>9、隐式转换</h4><p>● 数字＋字符串：数字转换为字符串 <code>console.log(12+&quot;12&quot;); //1212</code><br>● 数字＋布尔值：<code>true</code>转换为<code>1</code>，<code>false</code>转换为<code>0</code>  <code>console.log(12+true); //13</code><br>● 字符串＋布尔值：布尔值转换为true或false <code>console.log(&quot;hello&quot;+true); //hellotrue</code><br>● 布尔值＋布尔值 <code>console.log(true+true); //2</code></p>
+<h4 id="10、JavaScript-中的内置对象"><a href="#10、JavaScript-中的内置对象" class="headerlink" title="10、JavaScript 中的内置对象"></a>10、JavaScript 中的内置对象</h4><blockquote>
+<p>Arguments    函数参数集合<br>Array    数组<br>Boolean    布尔对象<br>Date    日期对象<br>Error    异常对象<br>Function    函数构造器<br>Math    数学对象<br>Number    数值对象<br>Object    基础对象<br>String    字符串对象</p>
+</blockquote>
+<h4 id="11、什么是Ajax和JSON，它们的优缺点？"><a href="#11、什么是Ajax和JSON，它们的优缺点？" class="headerlink" title="11、什么是Ajax和JSON，它们的优缺点？"></a>11、什么是Ajax和JSON，它们的优缺点？</h4><p>● Ajax（Asynchronous Javascript And XML/异步的javascript和xml）。<br>优点：</p>
+<ul>
+<li>可以使得页面不重载全部内容的情况下加载局部内容，降低数据传输量。</li>
+<li>避免用户不断刷新或者跳转页面，提高用户体验。<br>缺点：</li>
+<li>对搜索引擎不友好。</li>
+<li>要实现ajax下的前后退功能成本较大</li>
+<li>可能造成请求数的增加</li>
+<li>跨域问题限制</li>
+</ul>
+<p>● JSON：json是一种轻量级的数据交换格式，ECMA（欧洲计算机制造商协会）的一个子集；<br>优点：轻量级，占用带宽小、易于人的阅读和编写，便于机器（js）解析，支持复合数据类型（数组，对象，字符串，数字），能直接为服务器端代码使用，大大简化了服务器端和客户端的代码开发量。<br>缺点：相对xml通用性较差，数据可描述性较差；</p>
+<p>（拓展：json与xml的区别？）<br>● xml定义：可拓展标记语言，用于标记电子文件使其具有结构性的标记语言，可以用来标记数据、定义数据类型，是一种允许用户对自己的标记语言进行定义的语言。xml是SGML（标准通用标记语言）的子集，非常适合web传输。<br>● xml提供统一的方法来描述和交换独立于应用程序或供应商的结构化数据。<br>● xml优点：</p>
+<ul>
+<li>格式统一，符合标准；</li>
+<li>容易与其他系统进行交互，数据共享比较方便</li>
+</ul>
+<p>● 缺点：</p>
+<ul>
+<li>xml文件格式文件庞大，格式复杂，传输占用更多带宽</li>
+<li>服务器和客户端都需要花费大量代码来解析xml，服务器和客户端代码变得异常复杂和不容易维护。</li>
+<li>客户端不同浏览器之间解析xml的方式不一致，需要重复编写很多代码。</li>
+<li>服务器端和客户端解析xml花费更多资源和时间</li>
+</ul>
+<p>● 与json的优缺点比较</p>
+<ul>
+<li>可读性、可拓展性都很出色，但是xml的编码难度更高。</li>
+<li>json的解码难度几乎为0，而xml得考虑子父节点；</li>
+<li>xml的通用性更广，json则广泛应用于前端。</li>
+<li>json相对xml，数据体积更小；与js交互更方便；</li>
+<li>json对数据的描述性比xml较差；</li>
+<li>json的无论是传播还是解析速度远远快于xml；</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/09/2017技术总结/" data-id="cjdgqultq0000g4n19lyt4kns" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-2017感悟，2018展望" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/09/2017感悟，2018展望/" class="article-date">
+  <time datetime="2018-02-09T07:15:39.000Z" itemprop="datePublished">2018-02-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/09/2017感悟，2018展望/">2017感悟，2018展望</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>####<strong>感悟2017</strong><br>这一年，有很多美好聚会的回忆使人心旷神怡，这样的时刻总是短暂的，如今单纯的文字描述，看不出好的情绪，就连回忆的笑容，在这个结束的2017年的最后时刻似乎也被化解掉了。</p>
+<p>上篇文字似在写美好的回忆，又不像在写美好。年末与记忆连在一起，回首中夹杂着孤寂。</p>
+<p>2017上半年，我依然还是一个整天没正形的，只知道玩游戏的无知少年，从来也没有想过以后的职场生活，然而现在后悔也没啥用了！不过我在今年暑假期间却做出了一个最正确的决定，那就在老师的带领下去昆山打工，正是因为我去了昆山才会让我懂得了很多事情，也正是因为去了昆山才会遇到那个改变我的人，一个很可爱的女孩，巧合的是我和她都是山西长治的。虽然受了领班很多气，挨了很多次骂，最后也是提前离职，但是我却不后悔去昆山打工，因为这次昆山之行的收获真的是太多太多了，其中最大的收获就是我遇到了一个女孩，她长发及腰，在那么多穿工作服的人群中，我一眼就能看到她，不仅仅是因为她的头发，还有她走路的方式，我觉得都很特别，要问哪里特别呢，说实话，我也不知道；她还很可爱，她学我怎么走路，学我看见领班怎么走路，每次看见她我都觉得她真是傻的可爱。直到因为一些原因我要离职走的时候，她极力的想让我留下来，但是我还是走了，结果她哭了，哭的特别伤心。现在她是我女朋友，至于这中间发生的故事我就不多说了，免得伤害到正在看的单身狗（算秀恩爱吗？）（又没发照片，不算）。</p>
+<p>2017年的下半年，在艰苦的学习生活中，我总想学到很多技术，以至于在以后的职场的道路上更加顺畅，但是我却很少像其他人那样熬夜写作业，别人熬夜学习的时候，我在和女朋友聊天，或者追着看电视剧，没有一点危机感，就连作业有时候也完不成，有一段时间我对自己很没有信心，甚至都有放弃的冲动，但是最后我还是坚持下来了，我还没有掉队，因为别人可以做到的我一样也可以，甚至我要做的更好。在老师的教导下我们都从一个‘码盲’，变成了别人眼中的电脑‘高手’，但是我们自己都明白，自己学到的东西确实很多，但是真正掌握的却是少之甚少，这还得靠以后的工作来不断积累经验，只有靠自己才能真的变成大伙说的’大神‘。还有就是我们开设的口才课，其实一开始我觉得那样没什么用，但是后来我发现我错了，口才课太神奇了，真的，我之前和陌生人说话都费劲，看见异性还脸红，开始上口才课呢，也是硬着头皮上台讲，但是讲的多了，我发现我脸皮真的变厚了，从一开始的假装自己脸皮厚，变成了真的厚，太神奇了，冥冥之中我已经感觉到脸皮厚在以后的生活中一定是个优点，它会让我风生水起，嘿嘿。</p>
+<p>最后，非常感谢各位老师和教官的教导，是你们成就了这样的我。</p>
+<p>####<strong>展望2018</strong><br>2018年，对我来说是个特殊的年份，今年我将踏入社会开始实习，紧张而又不舍，但是更多的还是期待。</p>
+<p>紧张是因为我还没有做好准备，在专业技能上还有很多欠缺的地方，所掌握的程度也远远不够；还有一个原因是因为我没有真正意义的一个人离开过家，就连上大学都有2个很好的朋友一起过来的，一想到马上就要一个人在外地，靠自己打拼，真的特别紧张；不舍当然就是舍不得现在在一起的人和事了，离开自己所熟知的人和事，当然会有所不舍了，但是这次和以往的不一样，有些人分开可能就无缘再见了，毕业后可能有的人还在外地漂泊，也有的人回到自己的城市，从此断了联系的肯定不在少数，所以在仅剩的3个月里一定要和同学好好相处，过好人生最后的学生生涯；除了紧张和不舍，我的期待更多，对于以后的职业生涯，我充满了期待，甚至迫不及待的想要快点体验一下，究竟是好是坏，实力是占一定因素的，但是运气也是很重要的，毕竟做成一件事的3要素：天时、地利、人和，天时可是排在第一位的，我坚信自己的运气特别好。</p>
+<p>我也会在剩下的3个月里，谨遵老师教诲，认真学习，不断充实自己，提高自己，对以前学过的知识不断复习，老师布置的任务，用心完成，努力让自己的专业水平更精进。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/09/2017感悟，2018展望/" data-id="cjdgqulub0001g4n1f61iq5ot" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hexo搭建博客步骤" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/01/23/hexo搭建博客步骤/" class="article-date">
@@ -100,7 +226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/23/hexo搭建博客步骤/" data-id="cjdchxc1t0002s4n1yi472lxy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/01/23/hexo搭建博客步骤/" data-id="cjdgqulv70005g4n1466jir6s" class="article-share-link">Share</a>
       
       
     </footer>
@@ -160,7 +286,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/23/Github笔记总结/" data-id="cjdchxc1d0001s4n10r43a8un" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/01/23/Github笔记总结/" data-id="cjdgqulur0002g4n1ochfhgz1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -204,7 +330,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/23/时间都去哪了/" data-id="cjdchxc280003s4n1irq7vi66" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/01/23/时间都去哪了/" data-id="cjdgqulur0004g4n16bxmg7he" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客，文章/">博客，文章</a></li></ul>
@@ -251,7 +377,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/22/hello-world/" data-id="cjdchxc1d0000s4n1ac6elgme" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/01/22/hello-world/" data-id="cjdgqulur0003g4n1jz01kb7v" class="article-share-link">Share</a>
       
       
     </footer>
@@ -293,7 +419,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li></ul>
     </div>
   </div>
 
@@ -306,6 +432,14 @@
       <ul>
         
           <li>
+            <a href="/2018/02/09/2017技术总结/">技术总结</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/09/2017感悟，2018展望/">2017感悟，2018展望</a>
+          </li>
+        
+          <li>
             <a href="/2018/01/23/hexo搭建博客步骤/">hexo搭建博客步骤</a>
           </li>
         
@@ -315,10 +449,6 @@
         
           <li>
             <a href="/2018/01/23/时间都去哪了/">时间都去哪了</a>
-          </li>
-        
-          <li>
-            <a href="/2018/01/22/hello-world/">Hello World</a>
           </li>
         
       </ul>
